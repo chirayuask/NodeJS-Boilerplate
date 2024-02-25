@@ -1,0 +1,16 @@
+service: nodejs-boilerplate
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  hello:
+    handler: index.Handler
+    events:
+     - httpApi:
+         path: /health
+         method: get
+plugins:
+  - serverless-offline
