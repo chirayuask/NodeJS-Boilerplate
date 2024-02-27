@@ -14,5 +14,7 @@ export default {
     DB_PORT: process.env.DB_PORT,
     DB_DIALECT: process.env.DB_DIALECT,
     JWT_SECRET: process.env.JWT_SECRET,
-    PORT: process.env.PORT
+    PORT: process.env.PORT,
+    RATE_LIMITER_WINDOW_ALLOWED: process.env.RATE_LIMITER_WINDOW_ALLOWED,
+    RATE_LIMITER_MAX_ALLOWED: process.env.RATE_LIMITER_MAX_ALLOWED
 }
