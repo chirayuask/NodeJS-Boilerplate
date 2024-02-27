@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start:serverless" : "sls offline"
   },
   "type": "module",
   "dependencies": {
