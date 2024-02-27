@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 app.get('/health', (req, res) => {
     res.send('Hello World');
 });
+
 app.listen(env.PORT, () => {
     console.log('Server is running on port 3000');
 });
